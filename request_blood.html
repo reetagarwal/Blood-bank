@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Blood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Request Blood</h2>
+    <form action="request_blood.php" method="post">
+        <label>Patient Name:</label>
+        <input type="text" name="patient_name" required>
+
+        <label>Blood Group Needed:</label>
+        <select name="blood_group">
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+
+        <label>Hospital Name:</label>
+        <input type="text" name="hospital" required>
+
+        <label>Contact Number:</label>
+        <input type="text" name="contact" required>
+
+        <label>Urgency Level:</label>
+        <select name="urgency">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</body>
+</html>
